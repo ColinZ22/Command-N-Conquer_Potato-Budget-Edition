@@ -10,6 +10,11 @@ Furthermore, this game is currently under early development, and game features m
 Colin, the author of this game, takes no responsibility for any damage or loss caused by the fun and exciting gameplay of this game.
 By looking at this page, you agree to the terms listed above, and also agree to buying Colin a drink (or a cookie) when you see him in-person.
 
+## Gameplay Footage 
+
+![](https://github.com/ColinZ22/Command-N-Conquer_Potato-Budget-Edition/blob/main/Demo/RedMoving.gif)
+![](https://github.com/ColinZ22/Command-N-Conquer_Potato-Budget-Edition/blob/main/Demo/Blue%20Wins.gif)
+
 ## How do I play?
 At this moment, the only way to launch the game is to download the source code and all required python modules and run `main.py`
 The game will be packaged into a single executable file when version 1 is fully functional and released.
