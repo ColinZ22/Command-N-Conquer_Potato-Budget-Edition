@@ -5,6 +5,7 @@ from MouseEventChecker import MouseEventChecker
 from Units.Tank import Tank
 from Units.Artillery import Artillery
 from Units.MechanizedInfantry import MechanizedInfantry
+from Units.HeavyInfantry import HeavyInfantry
 from Units.Infantry import Infantry
 from Hex import Hex
 from Constants import *
@@ -220,6 +221,7 @@ class GameLevel1(object):
         Artillery('Blue', row=3, col=15, pixelMap=self.pixelMap, unitMap=self.unitMap)
         Artillery('Blue', row=3, col=16, pixelMap=self.pixelMap, unitMap=self.unitMap)
         Infantry('Blue', row=4, col=13, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        HeavyInfantry('Blue', row=4, col=14, pixelMap=self.pixelMap, unitMap=self.unitMap)
         Infantry('Blue', row=4, col=15, pixelMap=self.pixelMap, unitMap=self.unitMap)
 
         return self.unitMap
