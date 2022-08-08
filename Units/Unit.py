@@ -3,7 +3,7 @@ from Constants import *
 from Explosion import Explosion
 
 
-class Unit:
+class Unit(object):
 
     def __init__(self, team, hp, atkPt, row, col, pixelMap, image, mobility, attackRange, minAttackRange=0):
         self.team = team
@@ -61,7 +61,7 @@ class Unit:
         if self.canAttack:
             unitMap[row][col].hp = unitMap[row][col].hp - self.atkPt
             unitMap[row][col].underAttack = True
-            print(unitMap[self.row][self.col], "attacked")
+            print(unitMap[self.row][self.col], "attacked,")
             print(unitMap[row][col], "remaining was hit!!!")
             self.canAttack = False
 

@@ -3,7 +3,7 @@ from typing import Tuple
 import pygame
 import math
 
-class Hex:
+class Hex(object):
     def __init__(self, xPos, yPos, row, col, hexState="Unselected"):
         self.xPos = xPos
         self.yPos = yPos

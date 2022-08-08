@@ -4,10 +4,12 @@ from pygame_widgets.button import Button
 from MouseEventChecker import MouseEventChecker
 from Units.Tank import Tank
 from Units.Artillery import Artillery
+from Units.MechanizedInfantry import MechanizedInfantry
+from Units.Infantry import Infantry
 from Hex import Hex
 from Constants import *
 
-class GameLevel1:
+class GameLevel1(object):
     def __init__(self, gridRows, gridCols):
         self.height = gridRows
         self.width = gridCols
@@ -200,20 +202,25 @@ class GameLevel1:
 
     def initUnits(self):
 
-        Tank('Red', row=7, col=8, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Tank('Red', row=7, col=9, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Artillery('Red', row=8, col=9, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Artillery('Red', row=8, col=10, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Tank('Red', row=7, col=10, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Tank('Red', row=7, col=11, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Tank('Red', row=10, col=9, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Tank('Red', row=10, col=10, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Tank('Red', row=10, col=11, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Tank('Red', row=10, col=12, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Artillery('Red', row=11, col=10, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Artillery('Red', row=11, col=11, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        MechanizedInfantry('Red', row=9, col=12, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        MechanizedInfantry('Red', row=9, col=10, pixelMap=self.pixelMap, unitMap=self.unitMap)
+
         Artillery('Blue', row=2, col=2, pixelMap=self.pixelMap, unitMap=self.unitMap)
         Artillery('Blue', row=3, col=3, pixelMap=self.pixelMap, unitMap=self.unitMap)
         Tank('Blue', row=2, col=3, pixelMap=self.pixelMap, unitMap=self.unitMap)
         Tank('Blue', row=2, col=4, pixelMap=self.pixelMap, unitMap=self.unitMap)
         Tank('Blue', row=3, col=4, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Tank('Blue', row=3, col=10, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Artillery('Blue', row=3, col=11, pixelMap=self.pixelMap, unitMap=self.unitMap)
-        Artillery('Blue', row=3, col=12, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Tank('Blue', row=3, col=14, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Artillery('Blue', row=3, col=15, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Artillery('Blue', row=3, col=16, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Infantry('Blue', row=4, col=13, pixelMap=self.pixelMap, unitMap=self.unitMap)
+        Infantry('Blue', row=4, col=15, pixelMap=self.pixelMap, unitMap=self.unitMap)
 
         return self.unitMap
 

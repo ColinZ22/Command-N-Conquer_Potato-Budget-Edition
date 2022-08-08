@@ -1,7 +1,7 @@
 import time
 import pygame
 
-class MouseEventChecker:
+class MouseEventChecker(object):
     def __init__(self):
         # start time
         self.start = time.time()
